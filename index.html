@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ringsend Tech Centre – Fast & affordable phone repairs, new & used smartphones, and accessories in Dublin, Ireland. Same-day screen repairs. No fix, no fee." />
+  <meta name="keywords" content="phone repair Dublin, screen repair Dublin, iPhone repair Dublin, Samsung repair Dublin, buy phone Dublin, phone shop Dublin" />
+  <meta name="author" content="Ringsend Tech Centre" />
+  <meta property="og:title" content="Ringsend Tech Centre – Phone Repairs & Sales" />
+  <meta property="og:description" content="Same-day phone repairs in Dublin. Screen, battery, unlocking & more. No fix, no fee guarantee." />
+  <meta property="og:type" content="website" />
+  <title>Ringsend Tech Centre – Fast Phone Repairs & Sales</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <!-- EmailJS SDK — sends form data to your inbox, no backend needed -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    // ── STEP 1: Replace with your EmailJS Public Key (emailjs.com → Account → API Keys)
+    // Emails will be delivered to: ringsendmobiles@gmail.com
+    (function(){ emailjs.init({ publicKey: "whtAusfiZA2W29Y48" }); })();
+  </script>
+</head>
+<body>
+
+  <!-- ========== FLOATING ACTION BUTTONS ========== -->
+  <div class="fab-group">
+    <!-- WhatsApp FAB — opens WhatsApp with a pre-filled greeting -->
+    <a href="https://wa.me/353852022335?text=Hi%20Ringsend%20Tech%20Centre%20%F0%9F%91%8B%20I%20found%20your%20website%20and%20I%27d%20like%20to%20enquire%20about%20a%20repair%20%2F%20phone.%20Can%20you%20help%3F"
+       class="fab fab-whatsapp" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+      <span class="fab-tooltip">Chat on WhatsApp</span>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <!-- Call FAB -->
+    <a href="tel:+353852022335" class="fab fab-call" aria-label="Call us now">
+      <span class="fab-tooltip">Call Us</span>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    </a>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner container">
+      <a href="#home" class="logo">
+        <span class="logo-fix">Ringsend</span><span class="logo-cell">Tech</span>
+        <span class="logo-dot">●</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#repairs" class="nav-link">Repairs</a>
+        <a href="#shop" class="nav-link">Shop</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="tel:+353852022335" class="nav-cta">📞 Call Now</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="container hero-inner">
+      <div class="hero-badge reveal">⚡ Same-Day Repairs Available</div>
+      <h1 class="hero-title reveal">
+        Fast &amp; Affordable<br/>
+        <span class="hero-accent">Phone Repairs</span><br/>
+        in Dublin
+      </h1>
+      <p class="hero-sub reveal">Screen replacement · Battery fixes · Unlocking · Accessories<br/>
+        <strong>No Fix, No Fee</strong> — 30-Day Warranty on all repairs</p>
+      <div class="hero-ctas reveal">
+        <a href="#contact" class="btn btn-primary">Get a Quote</a>
+        <a href="tel:+353852022335" class="btn btn-outline">📞 085 202 2335</a>
+        <a href="https://wa.me/353852022335" class="btn btn-whatsapp" target="_blank">💬 WhatsApp</a>
+      </div>
+      <div class="hero-trust reveal">
+        <div class="trust-item"><span class="trust-icon">⭐</span><span>4.9/5 Rating</span></div>
+        <div class="trust-sep">|</div>
+        <div class="trust-item"><span class="trust-icon">🔧</span><span>500+ Repairs Done</span></div>
+        <div class="trust-sep">|</div>
+        <div class="trust-item"><span class="trust-icon">🛡️</span><span>30-Day Warranty</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== TICKER STRIP ========== -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span>⚡ Same-Day Screen Repairs</span>
+      <span>🛡️ No Fix, No Fee</span>
+      <span>📱 New &amp; Used iPhones</span>
+      <span>🔋 Battery Replacement from €29</span>
+      <span>🔓 Phone Unlocking from €15</span>
+      <span>⭐ 4.9★ Google Rating</span>
+      <span>📍 Dublin City Centre</span>
+      <span>⚡ Same-Day Screen Repairs</span>
+      <span>🛡️ No Fix, No Fee</span>
+      <span>📱 New &amp; Used iPhones</span>
+      <span>🔋 Battery Replacement from €29</span>
+      <span>🔓 Phone Unlocking from €15</span>
+      <span>⭐ 4.9★ Google Rating</span>
+      <span>📍 Dublin City Centre</span>
+    </div>
+  </div>
+
+  <!-- ========== SERVICES OVERVIEW ========== -->
+  <section class="services-overview" id="repairs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What We Fix</span>
+        <h2 class="section-title">Expert Repair Services</h2>
+        <p class="section-sub">Fast turnaround · Genuine parts · Certified technicians</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap" style="--c:#3b82f6">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>
+          </div>
+          <h3>Screen Repair</h3>
+          <p>Cracked or shattered? We replace screens for all major brands in under an hour.</p>
+          <div class="service-meta">
+            <span class="price-tag">From €49</span>
+            <span class="time-tag">⏱ 30–60 mins</span>
+          </div>
+          <a href="#contact" class="service-link">Get Quote →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap" style="--c:#10b981">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="7" width="12" height="14" rx="1"/><path d="M10 7V5a2 2 0 014 0v2"/><line x1="12" y1="12" x2="12" y2="16"/></svg>
+          </div>
+          <h3>Battery Replacement</h3>
+          <p>Draining fast? We'll swap your battery with a quality replacement and restore your day.</p>
+          <div class="service-meta">
+            <span class="price-tag">From €29</span>
+            <span class="time-tag">⏱ 20–30 mins</span>
+          </div>
+          <a href="#contact" class="service-link">Get Quote →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap" style="--c:#f59e0b">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12H3m18 0h-2M12 5V3m0 18v-2M7.05 7.05L5.636 5.636M18.364 18.364l-1.414-1.414M18.364 7.05l-1.414 1.414M7.05 18.364L5.636 16.95"/><circle cx="12" cy="12" r="4"/></svg>
+          </div>
+          <h3>Charging Port Fix</h3>
+          <p>Won't charge? We clean or replace charging ports across iPhone, Samsung and more.</p>
+          <div class="service-meta">
+            <span class="price-tag">From €35</span>
+            <span class="time-tag">⏱ 45–60 mins</span>
+          </div>
+          <a href="#contact" class="service-link">Get Quote →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap" style="--c:#ef4444">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 16v-4m0-4h.01"/></svg>
+          </div>
+          <h3>Water Damage</h3>
+          <p>Dropped it in water? Bring it in ASAP — the sooner, the better. We'll do our best.</p>
+          <div class="service-meta">
+            <span class="price-tag">From €45</span>
+            <span class="time-tag">⏱ Same Day</span>
+          </div>
+          <a href="#contact" class="service-link">Get Quote →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap" style="--c:#8b5cf6">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          </div>
+          <h3>Phone Unlocking</h3>
+          <p>Switch networks freely. We unlock all major brands — fast, safe, and permanent.</p>
+          <div class="service-meta">
+            <span class="price-tag">From €15</span>
+            <span class="time-tag">⏱ 15–30 mins</span>
+          </div>
+          <a href="#contact" class="service-link">Get Quote →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap" style="--c:#06b6d4">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Software &amp; Other</h3>
+          <p>Factory resets, software issues, camera faults, speaker problems — we cover it all.</p>
+          <div class="service-meta">
+            <span class="price-tag">From €20</span>
+            <span class="time-tag">⏱ Varies</span>
+          </div>
+          <a href="#contact" class="service-link">Get Quote →</a>
+        </div>
+
+      </div>
+      <div class="section-cta reveal">
+        <a href="#contact" class="btn btn-primary">Book a Repair</a>
+        <p class="no-fix">🛡️ No Fix, No Fee — You pay <strong>nothing</strong> if we can't repair it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SHOP / PRODUCTS ========== -->
+  <section class="shop-section" id="shop">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">For Sale</span>
+        <h2 class="section-title">Phones &amp; Accessories</h2>
+        <p class="section-sub">New · Used · Refurbished — All tested &amp; verified</p>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="filter-tabs reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="iphone">iPhone</button>
+        <button class="filter-btn" data-filter="samsung">Samsung</button>
+        <button class="filter-btn" data-filter="android">Other Android</button>
+        <button class="filter-btn" data-filter="accessories">Accessories</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+
+        <div class="product-card reveal" data-cat="iphone">
+          <div class="product-badge badge-new">New</div>
+          <div class="product-img">
+            <div class="product-img-placeholder" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+              <span class="phone-emoji">📱</span>
+              <span class="phone-label">iPhone 15</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Apple</span>
+            <h3 class="product-name">iPhone 15 128GB</h3>
+            <p class="product-condition">✅ Brand New · Sealed Box</p>
+            <div class="product-footer">
+              <span class="product-price">€849</span>
+              <a href="#contact" class="btn-enquire">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="iphone">
+          <div class="product-badge badge-refurb">Refurbished</div>
+          <div class="product-img">
+            <div class="product-img-placeholder" style="background:linear-gradient(135deg,#0f2027,#203a43)">
+              <span class="phone-emoji">📱</span>
+              <span class="phone-label">iPhone 13</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Apple</span>
+            <h3 class="product-name">iPhone 13 128GB</h3>
+            <p class="product-condition">🔄 Refurbished · Grade A</p>
+            <div class="product-footer">
+              <span class="product-price">€449</span>
+              <a href="#contact" class="btn-enquire">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="iphone">
+          <div class="product-badge badge-used">Used</div>
+          <div class="product-img">
+            <div class="product-img-placeholder" style="background:linear-gradient(135deg,#1a1a2e,#4a1942)">
+              <span class="phone-emoji">📱</span>
+              <span class="phone-label">iPhone 12</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Apple</span>
+            <h3 class="product-name">iPhone 12 64GB</h3>
+            <p class="product-condition">📦 Used · Good Condition</p>
+            <div class="product-footer">
+              <span class="product-price">€299</span>
+              <a href="#contact" class="btn-enquire">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="samsung">
+          <div class="product-badge badge-new">New</div>
+          <div class="product-img">
+            <div class="product-img-placeholder" style="background:linear-gradient(135deg,#0d1b2a,#1b4f72)">
+              <span class="phone-emoji">📱</span>
+              <span class="phone-label">S24</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Samsung</span>
+            <h3 class="product-name">Galaxy S24 128GB</h3>
+            <p class="product-condition">✅ Brand New · Sealed Box</p>
+            <div class="product-footer">
+              <span class="product-price">€799</span>
+              <a href="#contact" class="btn-enquire">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="samsung">
+          <div class="product-badge badge-refurb">Refurbished</div>
+          <div class="product-img">
+            <div class="product-img-placeholder" style="background:linear-gradient(135deg,#0a3d62,#1e3799)">
+              <span class="phone-emoji">📱</span>
+              <span class="phone-label">A54</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Samsung</span>
+            <h3 class="product-name">Galaxy A54 128GB</h3>
+            <p class="product-condition">🔄 Refurbished · Grade A</p>
+            <div class="product-footer">
+              <span class="product-price">€249</span>
+              <a href="#contact" class="btn-enquire">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="android">
+          <div class="product-badge badge-new">New</div>
+          <div class="product-img">
+            <div class="product-img-placeholder" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+              <span class="phone-emoji">📱</span>
+              <span class="phone-label">Pixel 8</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Google</span>
+            <h3 class="product-name">Pixel 8 128GB</h3>
+            <p class="product-condition">✅ Brand New · Sealed Box</p>
+            <div class="product-footer">
+              <span class="product-price">€699</span>
+              <a href="#contact" class="btn-enquire">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="accessories">
+          <div class="product-img">
+            <div class="product-img-placeholder acc-placeholder" style="background:linear-gradient(135deg,#1c1c1e,#2c2c2e)">
+              <span class="phone-emoji">🔋</span>
+              <span class="phone-label">Power Bank</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Accessories</span>
+            <h3 class="product-name">20,000mAh Power Bank</h3>
+            <p class="product-condition">✅ New · Fast Charging</p>
+            <div class="product-footer">
+              <span class="product-price">€29</span>
+              <a href="#contact" class="btn-enquire">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="accessories">
+          <div class="product-img">
+            <div class="product-img-placeholder acc-placeholder" style="background:linear-gradient(135deg,#1c1c1e,#2c2c2e)">
+              <span class="phone-emoji">🎧</span>
+              <span class="phone-label">Earbuds</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Accessories</span>
+            <h3 class="product-name">Wireless Earbuds Pro</h3>
+            <p class="product-condition">✅ New · Noise Cancelling</p>
+            <div class="product-footer">
+              <span class="product-price">€39</span>
+              <a href="#contact" class="btn-enquire">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-cat="accessories">
+          <div class="product-img">
+            <div class="product-img-placeholder acc-placeholder" style="background:linear-gradient(135deg,#1c1c1e,#2c2c2e)">
+              <span class="phone-emoji">🔌</span>
+              <span class="phone-label">Chargers</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Accessories</span>
+            <h3 class="product-name">USB-C Fast Charger 65W</h3>
+            <p class="product-condition">✅ New · Multi-device</p>
+            <div class="product-footer">
+              <span class="product-price">€19</span>
+              <a href="#contact" class="btn-enquire">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="section-cta reveal">
+        <p>Looking for something specific? We source phones on request.</p>
+        <a href="#contact" class="btn btn-outline">📩 Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE US ========== -->
+  <section class="why-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Why Ringsend Tech</span>
+        <h2 class="section-title">Built on Trust</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-num">01</div>
+          <h3>No Fix, No Fee</h3>
+          <p>If we can't fix it, you don't pay. Period. Zero risk to you.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-num">02</div>
+          <h3>30-Day Warranty</h3>
+          <p>Every repair comes with a 30-day guarantee. We stand behind our work.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-num">03</div>
+          <h3>Certified Technicians</h3>
+          <p>Our team has 7+ years of hands-on experience with all major phone brands.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-num">04</div>
+          <h3>Genuine Parts</h3>
+          <p>We use quality parts — OEM or manufacturer-grade — for lasting repairs.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-num">05</div>
+          <h3>Same-Day Service</h3>
+          <p>Most repairs done the same day, often within the hour. No long waits.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-num">06</div>
+          <h3>Transparent Pricing</h3>
+          <p>We quote upfront — no hidden fees, no surprises when you come to collect.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Reviews</span>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="stars-row">⭐⭐⭐⭐⭐ <strong>Google Reviews</strong></div>
+    </div>
+
+    <!-- Google Reviews Widget -->
+    <div class="elfsight-app-9a50f087-e77b-43fa-ba8a-25076abdef7f" data-elfsight-app-lazy"></div>
+
+  </div>
+</section>
+
+<!-- Elfsight Script -->
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about-section" id="about">
+    <div class="container about-inner">
+      <div class="about-visual reveal">
+        <div class="about-badge-card">
+          <div class="about-stat">
+            <span class="stat-num">7+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="about-stat">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">Repairs Completed</span>
+          </div>
+          <div class="about-stat">
+            <span class="stat-num">4.9★</span>
+            <span class="stat-label">Google Rating</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <span class="section-label">Our Story</span>
+        <h2 class="section-title left">Dublin's Trusted Phone Experts</h2>
+        <p>Ringsend Tech Centre started because we saw that phone repairs in Dublin were often too expensive or people were told their devices couldn’t be fixed when they actually could be.</p>
+        <p>Founded by a team of certified mobile technicians with over 7 years of experience, we set out to offer honest, fast, and affordable phone services to everyone in Dublin — students, families, professionals.</p>
+        <p>We're not a faceless chain. We're your local shop. When you walk in, we look you in the eye, give you a straight quote, and get to work. No drama. No hidden fees.</p>
+        <div class="about-certs">
+          <span class="cert-badge">🔧 Certified Technicians</span>
+          <span class="cert-badge">📍 Dublin Based</span>
+          <span class="cert-badge">🤝 Community-First</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Questions</span>
+        <h2 class="section-title">Frequently Asked</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            How long does a repair take?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Most repairs are done within 30–60 minutes. Screen replacements, battery swaps, and unlocking are typically same-day. Water damage and complex repairs may take longer — we'll always give you a clear time estimate upfront.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            Do you offer a warranty on repairs?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Yes! Every repair comes with a <strong>30-day warranty</strong>. If anything goes wrong related to our repair within that period, we'll fix it free of charge.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            Do I need an appointment?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>No appointment needed! Just walk in during opening hours. However, if you'd like to reserve a time slot or get a quote in advance, you can WhatsApp or call us and we'll be happy to arrange it.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            What if you can't fix my phone?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Simple — <strong>No Fix, No Fee</strong>. If we can't repair your device, you owe us nothing. We'll give you an honest assessment and options to consider.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            Do you buy second-hand phones?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Yes, we buy used phones! Bring it in and we'll assess it on the spot and make you a fair cash offer. We accept iPhones, Samsung, and most Android devices in any condition.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            What brands do you repair?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>We repair all major brands: Apple iPhone, Samsung Galaxy, Google Pixel, Huawei, Xiaomi, OnePlus, and more. If you're not sure, just ask!</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            Are refurbished phones reliable?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Absolutely. Our refurbished phones are thoroughly tested, cleaned, and graded before sale. Grade A means like-new condition. All refurbished devices come with a warranty for your peace of mind.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            Do you offer student discounts?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Yes! Show us a valid student ID and get <strong>10% off</strong> any repair service. We love supporting Dublin's student community.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-sub">We respond to all messages within 1 hour during business hours</p>
+      </div>
+      <div class="contact-inner">
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <div class="info-block">
+            <span class="info-icon">📍</span>
+            <div>
+              <strong>Address</strong>
+              <p>Ringsend 9-11 Bridge Street, Dublin 4, D04WP49</p>
+            </div>
+          </div>
+          <div class="info-block">
+            <span class="info-icon">📞</span>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:+353852022335">085 202 2335</a></p>
+            </div>
+          </div>
+          <div class="info-block">
+            <span class="info-icon">💬</span>
+            <div>
+              <strong>WhatsApp</strong>
+              <p><a href="https://wa.me/353852022335" target="_blank">+353 85 202 2335</a></p>
+            </div>
+          </div>
+          <div class="info-block">
+            <span class="info-icon">🕐</span>
+            <div>
+              <strong>Opening Hours</strong>
+              <table class="hours-table">
+                <tr><td>Mon – Fri</td><td>9:30 AM – 6:30 PM</td></tr>
+                <tr><td>Saturday</td><td>9:30 AM – 6:00 PM</td></tr>
+                <tr><td>Sunday</td><td>10:30 PM – 4:30 PM</td></tr>
+              </table>
+            </div>
+          </div>
+          <div class="contact-action-btns">
+            <a href="tel:+353852022335" class="btn btn-primary">📞 Call Now</a>
+            <a href="https://wa.me/353852022335?text=Hi%20Ringsend%20Tech%20Centre%2C%20I%27d%20like%20a%20quote" class="btn btn-whatsapp" target="_blank">💬 WhatsApp</a>
+          </div>
+
+          <!-- Map embed placeholder -->
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.7!2d-6.2268466!3d53.3419711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670f03fe081fd5%3A0x4d83ec506f883ef2!2sRingsend%20Tech%20Centre!5e0!3m2!1sen!2sie!4v1713260000000"
+              width="100%"
+              height="220"
+              style="border:0;border-radius:12px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <h3>Send Us a Message</h3>
+            <p class="form-intro">Fill in your details and we'll email you back within 1 hour. Or tap <strong>WhatsApp</strong> below to chat instantly.</p>
+
+            <div class="form-group">
+              <label for="fname">Your Name *</label>
+              <input type="text" id="fname" name="from_name" placeholder="e.g. Seán Murphy" required />
+            </div>
+            <div class="form-group">
+              <label for="fphone">Phone Number *</label>
+              <input type="tel" id="fphone" name="from_phone" placeholder="+353 86 ..." required />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address *</label>
+              <input type="email" id="femail" name="from_email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="fservice">Service Needed</label>
+              <select id="fservice" name="service">
+                <option value="">— Select a service —</option>
+                <option>Screen Repair</option>
+                <option>Battery Replacement</option>
+                <option>Charging Port Fix</option>
+                <option>Water Damage</option>
+                <option>Phone Unlocking</option>
+                <option>Buy a Phone</option>
+                <option>Other / General Enquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fmsg">Message *</label>
+              <textarea id="fmsg" name="message" rows="4" placeholder="Tell us your phone model and the issue..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
+              <span class="btn-text">Send Message 📧</span>
+              <span class="btn-spinner" style="display:none">Sending…</span>
+            </button>
+
+            <!-- OR divider -->
+            <div class="form-or"><span>or</span></div>
+
+            <!-- WhatsApp shortcut from form -->
+            <a id="waFormBtn"
+               href="https://wa.me/353852022335?text=Hi%20Ringsend%20Tech%20Centre%20%F0%9F%91%8B%20I%27d%20like%20a%20quote."
+               class="btn btn-whatsapp wa-form-btn" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Chat on WhatsApp Instead
+            </a>
+
+            <div class="form-success" id="formSuccess">
+              ✅ Message sent to our inbox! We'll reply within 1 hour.
+            </div>
+            <div class="form-error" id="formError">
+              ❌ Something went wrong. Please try WhatsApp or call us directly.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-fix">Ringsend</span><span class="logo-cell">Tech</span><span class="logo-dot">●</span>
+        </a>
+        <p>Dublin's trusted phone repair &amp; sales shop.<br/>Fast. Honest. Guaranteed.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="https://wa.me/353852022335" aria-label="WhatsApp">wa</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <a href="#repairs">Screen Repair</a>
+        <a href="#repairs">Battery Replacement</a>
+        <a href="#repairs">Phone Unlocking</a>
+        <a href="#repairs">Water Damage</a>
+        <a href="#repairs">Charging Port</a>
+      </div>
+      <div class="footer-links">
+        <h4>Shop</h4>
+        <a href="#shop">iPhones</a>
+        <a href="#shop">Samsung</a>
+        <a href="#shop">Android</a>
+        <a href="#shop">Accessories</a>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="#about">About Us</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact">Get a Quote</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© 2025 Ringsend Tech Centre. All rights reserved. | 3 Ringsend Road, Dublin 4</p>
+      <p>Privacy Policy · Terms of Service</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
