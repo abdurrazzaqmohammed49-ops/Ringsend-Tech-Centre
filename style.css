@@ -907,13 +907,32 @@ input, textarea, select { font-family: var(--font-body); }
 }
 
 /* Submit button spinner state */
-.form-submit { 
-  position: relative; 
-  background: #ffffff;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 36px;
-  box-shadow: 0 4px 24px rgba(29,78,216,0.06);
+.form-submit {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  padding: 13px 26px;
+  border-radius: var(--radius-sm);
+
+  background: var(--blue);
+  color: #fff;
+  border: none;
+
+  box-shadow: 0 4px 20px var(--blue-glow);
+  transition: all 0.2s ease;
+}
+
+/* KEEP IT BLUE ON HOVER */
+.form-submit:hover {
+  background: var(--blue);
+  color: #fff;
+  transform: translateY(-2px);
 }
 .contact-form h3 {
   font-family: var(--font-head);
