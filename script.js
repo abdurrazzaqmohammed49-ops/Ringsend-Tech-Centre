@@ -1,5 +1,27 @@
-const EMAILJS_SERVICE_ID  = "service_lgy6uh9";   // e.g. "service_abc123" — connects to ringsendmobiles@gmail.com
-const EMAILJS_TEMPLATE_ID = "template_uv2tkv8";  // e.g. "template_xyz789"
+/* ============================================
+   FIXCELL DUBLIN — script.js
+   Features: EmailJS form submission, dynamic
+   WhatsApp links, nav, accordion, filter, reveal
+============================================ */
+
+/* ============================================================
+   ⚙️  CONFIGURATION — Edit these values, nothing else needed
+   ============================================================
+   HOW TO SET UP EmailJS (free, takes 5 minutes):
+   1. Go to https://www.emailjs.com and create a free account
+   2. Add an Email Service (Gmail, Outlook, etc.) → copy Service ID
+   3. Create an Email Template → copy the Template ID
+      Use these variables in your template body:
+        From:    {{from_name}}  ({{from_email}})
+        Phone:   {{from_phone}}
+        Service: {{service}}
+        Message: {{message}}
+   4. Account → API Keys → copy your Public Key
+   5. Paste the Service ID + Template ID below, and paste the
+      Public Key into the emailjs.init() call in index.html <head>
+   ============================================================ */
+const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";   // e.g. "service_abc123" — connects to ringsendmobiles@gmail.com
+const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";  // e.g. "template_xyz789"
 
 // Your WhatsApp number in international format — digits only, no + or spaces
 const WA_NUMBER = "353852022335"; // ← replace with your real WhatsApp number
@@ -69,8 +91,7 @@ if (contactForm) {
     formError.style.display   = 'none';
 
     const templateParams = {
-      user_name:  name,   
-      from_name:  name,  
+      from_name:  name,
       from_email: email,
       from_phone: phone,
       service:    document.getElementById('fservice').value || 'Not specified',
@@ -79,11 +100,7 @@ if (contactForm) {
     };
 
     try {
-      // Send to YOU (admin)
-await emailjs.send(EMAILJS_SERVICE_ID, "template_tpdkya5", templateParams);
-
-// Send auto-reply to CUSTOMER
-await emailjs.send(EMAILJS_SERVICE_ID, "template_uv2tkv8", templateParams);
+      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams);
       formSuccess.style.display = 'block';
       contactForm.reset();
       syncWALinks();
