@@ -20,8 +20,8 @@
    5. Paste the Service ID + Template ID below, and paste the
       Public Key into the emailjs.init() call in index.html <head>
    ============================================================ */
-const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";   // e.g. "service_abc123" — connects to ringsendmobiles@gmail.com
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";  // e.g. "template_xyz789"
+const EMAILJS_SERVICE_ID  = "service_lgy6uh9";   // e.g. "service_abc123" — connects to ringsendmobiles@gmail.com
+const EMAILJS_TEMPLATE_ID = "template_uv2tkv8";  // e.g. "template_xyz789"
 
 // Your WhatsApp number in international format — digits only, no + or spaces
 const WA_NUMBER = "353852022335"; // ← replace with your real WhatsApp number
