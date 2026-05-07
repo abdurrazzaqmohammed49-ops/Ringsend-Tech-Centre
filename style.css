@@ -45,6 +45,7 @@ body {
   color: var(--white-dim);
   line-height: 1.65;
   overflow-x: hidden;
+  overflow-y: auto;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
 }
@@ -676,9 +677,61 @@ input, textarea, select { font-family: var(--font-body); }
 .testimonials {
   padding-block: var(--section-py);
   background: var(--black);
+  /* Ensure nothing clips the Elfsight widget */
+  overflow: visible;
 }
 .stars-row { margin-top: 10px; font-size: 15px; color: var(--muted); }
 .stars-row strong { color: var(--white); }
+
+/* ── Elfsight Google Reviews widget ── */
+.reviews-widget-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow: visible;
+  /* Prevent parent overflow:hidden from clipping the widget */
+  position: relative;
+  z-index: 1;
+}
+.elfsight-app-9a50f087-e77b-43fa-ba8a-25076abdef7f {
+  display: block !important;
+  width: 100% !important;
+  min-height: 300px;
+  overflow: visible !important;
+}
+/* Force Elfsight iframes + inner containers to be fully visible on all screens */
+.elfsight-app-9a50f087-e77b-43fa-ba8a-25076abdef7f iframe,
+.elfsight-app-9a50f087-e77b-43fa-ba8a-25076abdef7f > div,
+.elfsight-app-9a50f087-e77b-43fa-ba8a-25076abdef7f [class*="eapps"] {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: visible !important;
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 768px) {
+  .elfsight-app-9a50f087-e77b-43fa-ba8a-25076abdef7f {
+    /* Remove any x-scroll clipping */
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+    /* Ensure it's not squashed */
+    min-height: 400px;
+    /* Reset any transforms that could hide it */
+    transform: none !important;
+  }
+  /* The testimonials section must not clip on mobile */
+  .testimonials {
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+  /* Elfsight renders a shadow DOM — these selectors target the outer shell */
+  .eapps-widget-toolbar,
+  .eapps-google-reviews,
+  .eapps-google-reviews-wrapper {
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow: visible !important;
+  }
+}
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
