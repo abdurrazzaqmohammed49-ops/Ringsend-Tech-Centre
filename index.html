@@ -14,11 +14,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
-  <!-- EmailJS SDK — sends form data to your inbox, no backend needed -->
+  <!-- EmailJS SDK -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
-    // ── STEP 1: Replace with your EmailJS Public Key (emailjs.com → Account → API Keys)
-    // Emails will be delivered to: ringsendmobiles@gmail.com
+    // Emails delivered to: ringsendmobiles@gmail.com
     (function(){ emailjs.init({ publicKey: "whtAusfiZA2W29Y48" }); })();
   </script>
 </head>
@@ -26,13 +25,11 @@
 
   <!-- ========== FLOATING ACTION BUTTONS ========== -->
   <div class="fab-group">
-    <!-- WhatsApp FAB — opens WhatsApp with a pre-filled greeting -->
     <a href="https://wa.me/353852022335?text=Hi%20Ringsend%20Tech%20Centre%20%F0%9F%91%8B%20I%20found%20your%20website%20and%20I%27d%20like%20to%20enquire%20about%20a%20repair%20%2F%20phone.%20Can%20you%20help%3F"
        class="fab fab-whatsapp" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
       <span class="fab-tooltip">Chat on WhatsApp</span>
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
-    <!-- Call FAB -->
     <a href="tel:+353852022335" class="fab fab-call" aria-label="Call us now">
       <span class="fab-tooltip">Call Us</span>
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
@@ -42,10 +39,16 @@
   <!-- ========== NAVIGATION ========== -->
   <header class="navbar" id="navbar">
     <div class="nav-inner container">
-      <a href="#home" class="logo">
-        <span class="logo-fix">Ringsend</span><span class="logo-cell">Tech Centre</span>
-        <span class="logo-dot">●</span>
+
+      <!-- ✅ LOGO WITH IMAGE -->
+      <a href="#home" class="logo logo-img-wrap">
+        <img src="logo.jpeg" alt="Ringsend Tech Centre Logo" class="nav-logo-img" />
+        <span class="logo-name">
+          <span class="logo-fix">Ringsend</span>
+          <span class="logo-cell">Tech Centre</span>
+        </span>
       </a>
+
       <nav class="nav-links" id="navLinks">
         <a href="#home" class="nav-link active">Home</a>
         <a href="#repairs" class="nav-link">Repairs</a>
@@ -102,14 +105,14 @@
       <span>🔋 Battery Replacement from €29</span>
       <span>🔓 Phone Unlocking from €15</span>
       <span>⭐ 4.9★ Google Rating</span>
-      <span>📍 Dublin City Centre</span>
+      <span>📍 Ringsend, Dublin 4</span>
       <span>⚡ Same-Day Screen Repairs</span>
       <span>🛡️ No Fix, No Fee</span>
       <span>📱 New &amp; Used iPhones</span>
       <span>🔋 Battery Replacement from €29</span>
       <span>🔓 Phone Unlocking from €15</span>
       <span>⭐ 4.9★ Google Rating</span>
-      <span>📍 Dublin City Centre</span>
+      <span>📍 Ringsend, Dublin 4</span>
     </div>
   </div>
 
@@ -217,8 +220,6 @@
         <h2 class="section-title">Phones &amp; Accessories</h2>
         <p class="section-sub">New · Used · Refurbished — All tested &amp; verified</p>
       </div>
-
-      <!-- Category Filter -->
       <div class="filter-tabs reveal">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="iphone">iPhone</button>
@@ -226,166 +227,101 @@
         <button class="filter-btn" data-filter="android">Other Android</button>
         <button class="filter-btn" data-filter="accessories">Accessories</button>
       </div>
-
-      <!-- Products Grid -->
       <div class="products-grid" id="productsGrid">
 
         <div class="product-card reveal" data-cat="iphone">
           <div class="product-badge badge-new">New</div>
-          <div class="product-img">
-            <div class="product-img-placeholder" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
-              <span class="phone-emoji">📱</span>
-              <span class="phone-label">iPhone 15</span>
-            </div>
-          </div>
+          <div class="product-img"><div class="product-img-placeholder" style="background:linear-gradient(135deg,#1a1a2e,#16213e)"><span class="phone-emoji">📱</span><span class="phone-label">iPhone 15</span></div></div>
           <div class="product-info">
             <span class="product-brand">Apple</span>
             <h3 class="product-name">iPhone 15 128GB</h3>
             <p class="product-condition">✅ Brand New · Sealed Box</p>
-            <div class="product-footer">
-              <a href="#contact" class="btn-enquire">Enquire</a>
-            </div>
+            <div class="product-footer"><a href="#contact" class="btn-enquire">Enquire</a></div>
           </div>
         </div>
 
         <div class="product-card reveal" data-cat="iphone">
           <div class="product-badge badge-refurb">Refurbished</div>
-          <div class="product-img">
-            <div class="product-img-placeholder" style="background:linear-gradient(135deg,#0f2027,#203a43)">
-              <span class="phone-emoji">📱</span>
-              <span class="phone-label">iPhone 13</span>
-            </div>
-          </div>
+          <div class="product-img"><div class="product-img-placeholder" style="background:linear-gradient(135deg,#0f2027,#203a43)"><span class="phone-emoji">📱</span><span class="phone-label">iPhone 13</span></div></div>
           <div class="product-info">
             <span class="product-brand">Apple</span>
             <h3 class="product-name">iPhone 13 128GB</h3>
             <p class="product-condition">🔄 Refurbished · Grade A</p>
-            <div class="product-footer">
-              <a href="#contact" class="btn-enquire">Enquire</a>
-            </div>
+            <div class="product-footer"><a href="#contact" class="btn-enquire">Enquire</a></div>
           </div>
         </div>
 
         <div class="product-card reveal" data-cat="iphone">
           <div class="product-badge badge-used">Used</div>
-          <div class="product-img">
-            <div class="product-img-placeholder" style="background:linear-gradient(135deg,#1a1a2e,#4a1942)">
-              <span class="phone-emoji">📱</span>
-              <span class="phone-label">iPhone 12</span>
-            </div>
-          </div>
+          <div class="product-img"><div class="product-img-placeholder" style="background:linear-gradient(135deg,#1a1a2e,#4a1942)"><span class="phone-emoji">📱</span><span class="phone-label">iPhone 12</span></div></div>
           <div class="product-info">
             <span class="product-brand">Apple</span>
             <h3 class="product-name">iPhone 12 64GB</h3>
             <p class="product-condition">📦 Used · Good Condition</p>
-            <div class="product-footer">
-              <a href="#contact" class="btn-enquire">Enquire</a>
-            </div>
+            <div class="product-footer"><a href="#contact" class="btn-enquire">Enquire</a></div>
           </div>
         </div>
 
         <div class="product-card reveal" data-cat="samsung">
           <div class="product-badge badge-new">New</div>
-          <div class="product-img">
-            <div class="product-img-placeholder" style="background:linear-gradient(135deg,#0d1b2a,#1b4f72)">
-              <span class="phone-emoji">📱</span>
-              <span class="phone-label">S24</span>
-            </div>
-          </div>
+          <div class="product-img"><div class="product-img-placeholder" style="background:linear-gradient(135deg,#0d1b2a,#1b4f72)"><span class="phone-emoji">📱</span><span class="phone-label">S24</span></div></div>
           <div class="product-info">
             <span class="product-brand">Samsung</span>
             <h3 class="product-name">Galaxy S24 128GB</h3>
             <p class="product-condition">✅ Brand New · Sealed Box</p>
-            <div class="product-footer">
-              <a href="#contact" class="btn-enquire">Enquire</a>
-            </div>
+            <div class="product-footer"><a href="#contact" class="btn-enquire">Enquire</a></div>
           </div>
         </div>
 
         <div class="product-card reveal" data-cat="samsung">
           <div class="product-badge badge-refurb">Refurbished</div>
-          <div class="product-img">
-            <div class="product-img-placeholder" style="background:linear-gradient(135deg,#0a3d62,#1e3799)">
-              <span class="phone-emoji">📱</span>
-              <span class="phone-label">A54</span>
-            </div>
-          </div>
+          <div class="product-img"><div class="product-img-placeholder" style="background:linear-gradient(135deg,#0a3d62,#1e3799)"><span class="phone-emoji">📱</span><span class="phone-label">A54</span></div></div>
           <div class="product-info">
             <span class="product-brand">Samsung</span>
             <h3 class="product-name">Galaxy A54 128GB</h3>
             <p class="product-condition">🔄 Refurbished · Grade A</p>
-            <div class="product-footer">
-              <a href="#contact" class="btn-enquire">Enquire</a>
-            </div>
+            <div class="product-footer"><a href="#contact" class="btn-enquire">Enquire</a></div>
           </div>
         </div>
 
         <div class="product-card reveal" data-cat="android">
           <div class="product-badge badge-new">New</div>
-          <div class="product-img">
-            <div class="product-img-placeholder" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
-              <span class="phone-emoji">📱</span>
-              <span class="phone-label">Pixel 8</span>
-            </div>
-          </div>
+          <div class="product-img"><div class="product-img-placeholder" style="background:linear-gradient(135deg,#1a1a2e,#16213e)"><span class="phone-emoji">📱</span><span class="phone-label">Pixel 8</span></div></div>
           <div class="product-info">
             <span class="product-brand">Google</span>
             <h3 class="product-name">Pixel 8 128GB</h3>
             <p class="product-condition">✅ Brand New · Sealed Box</p>
-            <div class="product-footer">
-              <a href="#contact" class="btn-enquire">Enquire</a>
-            </div>
+            <div class="product-footer"><a href="#contact" class="btn-enquire">Enquire</a></div>
           </div>
         </div>
 
         <div class="product-card reveal" data-cat="accessories">
-          <div class="product-img">
-            <div class="product-img-placeholder acc-placeholder" style="background:linear-gradient(135deg,#1c1c1e,#2c2c2e)">
-              <span class="phone-emoji">🔋</span>
-              <span class="phone-label">Power Bank</span>
-            </div>
-          </div>
+          <div class="product-img"><div class="product-img-placeholder acc-placeholder" style="background:linear-gradient(135deg,#1c1c1e,#2c2c2e)"><span class="phone-emoji">🔋</span><span class="phone-label">Power Bank</span></div></div>
           <div class="product-info">
             <span class="product-brand">Accessories</span>
             <h3 class="product-name">20,000mAh Power Bank</h3>
             <p class="product-condition">✅ New · Fast Charging</p>
-            <div class="product-footer">
-              <a href="#contact" class="btn-enquire">Enquire</a>
-            </div>
+            <div class="product-footer"><a href="#contact" class="btn-enquire">Enquire</a></div>
           </div>
         </div>
 
         <div class="product-card reveal" data-cat="accessories">
-          <div class="product-img">
-            <div class="product-img-placeholder acc-placeholder" style="background:linear-gradient(135deg,#1c1c1e,#2c2c2e)">
-              <span class="phone-emoji">🎧</span>
-              <span class="phone-label">Earbuds</span>
-            </div>
-          </div>
+          <div class="product-img"><div class="product-img-placeholder acc-placeholder" style="background:linear-gradient(135deg,#1c1c1e,#2c2c2e)"><span class="phone-emoji">🎧</span><span class="phone-label">Earbuds</span></div></div>
           <div class="product-info">
             <span class="product-brand">Accessories</span>
             <h3 class="product-name">Wireless Earbuds Pro</h3>
             <p class="product-condition">✅ New · Noise Cancelling</p>
-            <div class="product-footer">
-              <a href="#contact" class="btn-enquire">Enquire</a>
-            </div>
+            <div class="product-footer"><a href="#contact" class="btn-enquire">Enquire</a></div>
           </div>
         </div>
 
         <div class="product-card reveal" data-cat="accessories">
-          <div class="product-img">
-            <div class="product-img-placeholder acc-placeholder" style="background:linear-gradient(135deg,#1c1c1e,#2c2c2e)">
-              <span class="phone-emoji">🔌</span>
-              <span class="phone-label">Chargers</span>
-            </div>
-          </div>
+          <div class="product-img"><div class="product-img-placeholder acc-placeholder" style="background:linear-gradient(135deg,#1c1c1e,#2c2c2e)"><span class="phone-emoji">🔌</span><span class="phone-label">Chargers</span></div></div>
           <div class="product-info">
             <span class="product-brand">Accessories</span>
             <h3 class="product-name">USB-C Fast Charger 65W</h3>
             <p class="product-condition">✅ New · Multi-device</p>
-            <div class="product-footer">
-              <a href="#contact" class="btn-enquire">Enquire</a>
-            </div>
+            <div class="product-footer"><a href="#contact" class="btn-enquire">Enquire</a></div>
           </div>
         </div>
 
@@ -405,36 +341,12 @@
         <h2 class="section-title">Built on Trust</h2>
       </div>
       <div class="why-grid">
-        <div class="why-card reveal">
-          <div class="why-num">01</div>
-          <h3>No Fix, No Fee</h3>
-          <p>If we can't fix it, you don't pay. Period. Zero risk to you.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-num">02</div>
-          <h3>30-Day Warranty</h3>
-          <p>Every repair comes with a 30-day guarantee. We stand behind our work.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-num">03</div>
-          <h3>Certified Technicians</h3>
-          <p>Our team has 7+ years of hands-on experience with all major phone brands.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-num">04</div>
-          <h3>Genuine Parts</h3>
-          <p>We use quality parts — OEM or manufacturer-grade — for lasting repairs.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-num">05</div>
-          <h3>Same-Day Service</h3>
-          <p>Most repairs done the same day, often within the hour. No long waits.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-num">06</div>
-          <h3>Transparent Pricing</h3>
-          <p>We quote upfront — no hidden fees, no surprises when you come to collect.</p>
-        </div>
+        <div class="why-card reveal"><div class="why-num">01</div><h3>No Fix, No Fee</h3><p>If we can't fix it, you don't pay. Period. Zero risk to you.</p></div>
+        <div class="why-card reveal"><div class="why-num">02</div><h3>30-Day Warranty</h3><p>Every repair comes with a 30-day guarantee. We stand behind our work.</p></div>
+        <div class="why-card reveal"><div class="why-num">03</div><h3>Certified Technicians</h3><p>Our team has 7+ years of hands-on experience with all major phone brands.</p></div>
+        <div class="why-card reveal"><div class="why-num">04</div><h3>Genuine Parts</h3><p>We use quality parts — OEM or manufacturer-grade — for lasting repairs.</p></div>
+        <div class="why-card reveal"><div class="why-num">05</div><h3>Same-Day Service</h3><p>Most repairs done the same day, often within the hour. No long waits.</p></div>
+        <div class="why-card reveal"><div class="why-num">06</div><h3>Transparent Pricing</h3><p>We quote upfront — no hidden fees, no surprises when you come to collect.</p></div>
       </div>
     </div>
   </section>
@@ -447,14 +359,9 @@
         <h2 class="section-title">What Our Customers Say</h2>
         <div class="stars-row">⭐⭐⭐⭐⭐ <strong>Google Reviews</strong></div>
       </div>
-
-      <!-- Google Reviews Widget -->
       <div class="elfsight-app-9a50f087-e77b-43fa-ba8a-25076abdef7f" data-elfsight-app-lazy></div>
-
     </div>
   </section>
-
-  <!-- Elfsight Script -->
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 
   <!-- ========== ABOUT ========== -->
@@ -462,18 +369,9 @@
     <div class="container about-inner">
       <div class="about-visual reveal">
         <div class="about-badge-card">
-          <div class="about-stat">
-            <span class="stat-num">7+</span>
-            <span class="stat-label">Years Experience</span>
-          </div>
-          <div class="about-stat">
-            <span class="stat-num">500+</span>
-            <span class="stat-label">Repairs Completed</span>
-          </div>
-          <div class="about-stat">
-            <span class="stat-num">4.9★</span>
-            <span class="stat-label">Google Rating</span>
-          </div>
+          <div class="about-stat"><span class="stat-num">7+</span><span class="stat-label">Years Experience</span></div>
+          <div class="about-stat"><span class="stat-num">500+</span><span class="stat-label">Repairs Completed</span></div>
+          <div class="about-stat"><span class="stat-num">4.9★</span><span class="stat-label">Google Rating</span></div>
         </div>
       </div>
       <div class="about-text reveal">
@@ -499,69 +397,13 @@
         <h2 class="section-title">Frequently Asked</h2>
       </div>
       <div class="faq-grid">
-        <div class="faq-item reveal">
-          <button class="faq-q" aria-expanded="false">
-            How long does a repair take?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-a">
-            <p>Most repairs are done within 30–60 minutes. Screen replacements, battery swaps, and unlocking are typically same-day. Water damage and complex repairs may take longer — we'll always give you a clear time estimate upfront.</p>
-          </div>
-        </div>
-        <div class="faq-item reveal">
-          <button class="faq-q" aria-expanded="false">
-            Do you offer a warranty on repairs?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-a">
-            <p>Yes! Every repair comes with a <strong>30-day warranty</strong>. If anything goes wrong related to our repair within that period, we'll fix it free of charge.</p>
-          </div>
-        </div>
-        <div class="faq-item reveal">
-          <button class="faq-q" aria-expanded="false">
-            Do I need an appointment?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-a">
-            <p>No appointment needed! Just walk in during opening hours. However, if you'd like to reserve a time slot or get a quote in advance, you can WhatsApp or call us and we'll be happy to arrange it.</p>
-          </div>
-        </div>
-        <div class="faq-item reveal">
-          <button class="faq-q" aria-expanded="false">
-            What if you can't fix my phone?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-a">
-            <p>Simple — <strong>No Fix, No Fee</strong>. If we can't repair your device, you owe us nothing. We'll give you an honest assessment and options to consider.</p>
-          </div>
-        </div>
-        <div class="faq-item reveal">
-          <button class="faq-q" aria-expanded="false">
-            Do you buy second-hand phones?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-a">
-            <p>Yes, we buy used phones! Bring it in and we'll assess it on the spot and make you a fair cash offer. We accept iPhones, Samsung, and most Android devices in any condition.</p>
-          </div>
-        </div>
-        <div class="faq-item reveal">
-          <button class="faq-q" aria-expanded="false">
-            What brands do you repair?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-a">
-            <p>We repair all major brands: Apple iPhone, Samsung Galaxy, Google Pixel, Huawei, Xiaomi, OnePlus, and more. If you're not sure, just ask!</p>
-          </div>
-        </div>
-        <div class="faq-item reveal">
-          <button class="faq-q" aria-expanded="false">
-            Are refurbished phones reliable?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-a">
-            <p>Absolutely. Our refurbished phones are thoroughly tested, cleaned, and graded before sale. Grade A means like-new condition. All refurbished devices come with a warranty for your peace of mind.</p>
-          </div>
-        </div>
+        <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">How long does a repair take?<span class="faq-icon">+</span></button><div class="faq-a"><p>Most repairs are done within 30–60 minutes. Screen replacements, battery swaps, and unlocking are typically same-day. Water damage and complex repairs may take longer — we'll always give you a clear time estimate upfront.</p></div></div>
+        <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">Do you offer a warranty on repairs?<span class="faq-icon">+</span></button><div class="faq-a"><p>Yes! Every repair comes with a <strong>30-day warranty</strong>. If anything goes wrong related to our repair within that period, we'll fix it free of charge.</p></div></div>
+        <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">Do I need an appointment?<span class="faq-icon">+</span></button><div class="faq-a"><p>No appointment needed! Just walk in during opening hours. However, if you'd like to reserve a time slot or get a quote in advance, you can WhatsApp or call us and we'll be happy to arrange it.</p></div></div>
+        <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">What if you can't fix my phone?<span class="faq-icon">+</span></button><div class="faq-a"><p>Simple — <strong>No Fix, No Fee</strong>. If we can't repair your device, you owe us nothing. We'll give you an honest assessment and options to consider.</p></div></div>
+        <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">Do you buy second-hand phones?<span class="faq-icon">+</span></button><div class="faq-a"><p>Yes, we buy used phones! Bring it in and we'll assess it on the spot and make you a fair cash offer. We accept iPhones, Samsung, and most Android devices in any condition.</p></div></div>
+        <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">What brands do you repair?<span class="faq-icon">+</span></button><div class="faq-a"><p>We repair all major brands: Apple iPhone, Samsung Galaxy, Google Pixel, Huawei, Xiaomi, OnePlus, and more. If you're not sure, just ask!</p></div></div>
+        <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">Are refurbished phones reliable?<span class="faq-icon">+</span></button><div class="faq-a"><p>Absolutely. Our refurbished phones are thoroughly tested, cleaned, and graded before sale. Grade A means like-new condition. All refurbished devices come with a warranty for your peace of mind.</p></div></div>
       </div>
     </div>
   </section>
@@ -575,78 +417,33 @@
         <p class="section-sub">We respond to all messages within 1 hour during business hours</p>
       </div>
       <div class="contact-inner">
-
-        <!-- Contact Info -->
         <div class="contact-info reveal">
-          <div class="info-block">
-            <span class="info-icon">📍</span>
-            <div>
-              <strong>Address</strong>
-              <p>Ringsend 9-11 Bridge Street, Dublin 4, D04WP49</p>
-            </div>
-          </div>
-          <div class="info-block">
-            <span class="info-icon">📞</span>
-            <div>
-              <strong>Phone</strong>
-              <p><a href="tel:+353852022335">085 202 2335</a></p>
-            </div>
-          </div>
-          <div class="info-block">
-            <span class="info-icon">💬</span>
-            <div>
-              <strong>WhatsApp</strong>
-              <p><a href="https://wa.me/353852022335" target="_blank">+353 85 202 2335</a></p>
-            </div>
-          </div>
-          <div class="info-block">
-            <span class="info-icon">🕐</span>
-            <div>
-              <strong>Opening Hours</strong>
-              <table class="hours-table">
-                <tr><td>Mon – Fri</td><td>9:30 AM – 6:30 PM</td></tr>
-                <tr><td>Saturday</td><td>9:30 AM – 6:00 PM</td></tr>
-                <tr><td>Sunday</td><td>10:30 PM – 4:30 PM</td></tr>
-              </table>
-            </div>
-          </div>
+          <div class="info-block"><span class="info-icon">📍</span><div><strong>Address</strong><p>Ringsend 9-11 Bridge Street, Dublin 4, D04WP49</p></div></div>
+          <div class="info-block"><span class="info-icon">📞</span><div><strong>Phone</strong><p><a href="tel:+353852022335">085 202 2335</a></p></div></div>
+          <div class="info-block"><span class="info-icon">💬</span><div><strong>WhatsApp</strong><p><a href="https://wa.me/353852022335" target="_blank">+353 85 202 2335</a></p></div></div>
+          <div class="info-block"><span class="info-icon">🕐</span><div><strong>Opening Hours</strong>
+            <table class="hours-table">
+              <tr><td>Mon – Fri</td><td>9:30 AM – 6:30 PM</td></tr>
+              <tr><td>Saturday</td><td>9:30 AM – 6:00 PM</td></tr>
+              <tr><td>Sunday</td><td>10:30 AM – 4:30 PM</td></tr>
+            </table>
+          </div></div>
           <div class="contact-action-btns">
             <a href="tel:+353852022335" class="btn btn-primary">📞 Call Now</a>
             <a href="https://wa.me/353852022335?text=Hi%20Ringsend%20Tech%20Centre%2C%20I%27d%20like%20a%20quote" class="btn btn-whatsapp" target="_blank">💬 WhatsApp</a>
           </div>
-
-          <!-- Map embed -->
           <div class="map-embed">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.7!2d-6.2268466!3d53.3419711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670f03fe081fd5%3A0x4d83ec506f883ef2!2sRingsend%20Tech%20Centre!5e0!3m2!1sen!2sie!4v1713260000000"
-              width="100%"
-              height="220"
-              style="border:0;border-radius:12px;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.7!2d-6.2268466!3d53.3419711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670f03fe081fd5%3A0x4d83ec506f883ef2!2sRingsend%20Tech%20Centre!5e0!3m2!1sen!2sie!4v1713260000000" width="100%" height="220" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 
-        <!-- Contact Form -->
         <div class="contact-form-wrap reveal">
           <form class="contact-form" id="contactForm" novalidate>
             <h3>Send Us a Message</h3>
             <p class="form-intro">Fill in your details and we'll email you back within 1 hour. Or tap <strong>WhatsApp</strong> below to chat instantly.</p>
-
-            <div class="form-group">
-              <label for="fname">Your Name *</label>
-              <input type="text" id="fname" name="from_name" placeholder="e.g. Seán Murphy" required />
-            </div>
-            <div class="form-group">
-              <label for="fphone">Phone Number *</label>
-              <input type="tel" id="fphone" name="from_phone" placeholder="+353 86 ..." required />
-            </div>
-            <div class="form-group">
-              <label for="femail">Email Address *</label>
-              <input type="email" id="femail" name="from_email" placeholder="you@example.com" required />
-            </div>
+            <div class="form-group"><label for="fname">Your Name *</label><input type="text" id="fname" name="from_name" placeholder="e.g. Seán Murphy" required /></div>
+            <div class="form-group"><label for="fphone">Phone Number *</label><input type="tel" id="fphone" name="from_phone" placeholder="+353 86 ..." required /></div>
+            <div class="form-group"><label for="femail">Email Address *</label><input type="email" id="femail" name="from_email" placeholder="you@example.com" required /></div>
             <div class="form-group">
               <label for="fservice">Service Needed</label>
               <select id="fservice" name="service">
@@ -660,36 +457,20 @@
                 <option>Other / General Enquiry</option>
               </select>
             </div>
-            <div class="form-group">
-              <label for="fmsg">Message *</label>
-              <textarea id="fmsg" name="message" rows="4" placeholder="Tell us your phone model and the issue..." required></textarea>
-            </div>
-
+            <div class="form-group"><label for="fmsg">Message *</label><textarea id="fmsg" name="message" rows="4" placeholder="Tell us your phone model and the issue..." required></textarea></div>
             <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
               <span class="btn-text">Send Message 📧</span>
               <span class="btn-spinner" style="display:none">Sending…</span>
             </button>
-
-            <!-- OR divider -->
             <div class="form-or"><span>or</span></div>
-
-            <!-- WhatsApp shortcut from form -->
-            <a id="waFormBtn"
-               href="https://wa.me/353852022335?text=Hi%20Ringsend%20Tech%20Centre%20%F0%9F%91%8B%20I%27d%20like%20a%20quote."
-               class="btn btn-whatsapp wa-form-btn" target="_blank" rel="noopener">
+            <a id="waFormBtn" href="https://wa.me/353852022335?text=Hi%20Ringsend%20Tech%20Centre%20%F0%9F%91%8B%20I%27d%20like%20a%20quote." class="btn btn-whatsapp wa-form-btn" target="_blank" rel="noopener">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
               Chat on WhatsApp Instead
             </a>
-
-            <div class="form-success" id="formSuccess">
-              ✅ Message sent to our inbox! We'll reply within 1 hour.
-            </div>
-            <div class="form-error" id="formError">
-              ❌ Something went wrong. Please try WhatsApp or call us directly.
-            </div>
+            <div class="form-success" id="formSuccess">✅ Message sent to our inbox! We'll reply within 1 hour.</div>
+            <div class="form-error" id="formError">❌ Something went wrong. Please try WhatsApp or call us directly.</div>
           </form>
         </div>
-
       </div>
     </div>
   </section>
@@ -698,30 +479,29 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <a href="#home" class="logo">
-          <span class="logo-fix">Ringsend</span><span class="logo-cell">Tech Centre</span><span class="logo-dot">●</span>
+
+        <!-- ✅ FOOTER LOGO WITH IMAGE -->
+        <a href="#home" class="logo logo-img-wrap">
+          <img src="logo.jpeg" alt="Ringsend Tech Centre Logo" class="nav-logo-img footer-logo-img" />
+          <span class="logo-name">
+            <span class="logo-fix">Ringsend</span>
+            <span class="logo-cell">Tech Centre</span>
+          </span>
         </a>
+
         <p>Dublin's trusted phone repair &amp; sales shop.<br/>Fast. Honest. Guaranteed.</p>
         <div class="footer-socials">
           <a href="https://www.facebook.com/share/1ArCat3tKd/?mibextid=wwXIfr" aria-label="Facebook" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" viewBox="0 0 24 24">
-              <path d="M22 12a10 10 0 10-11.5 9.87v-6.99H7.9V12h2.6V9.8c0-2.56 1.52-3.98 3.85-3.98 1.11 0 2.27.2 2.27.2v2.5h-1.28c-1.26 0-1.65.78-1.65 1.58V12h2.8l-.45 2.88h-2.35v6.99A10 10 0 0022 12z"/>
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.5 9.87v-6.99H7.9V12h2.6V9.8c0-2.56 1.52-3.98 3.85-3.98 1.11 0 2.27.2 2.27.2v2.5h-1.28c-1.26 0-1.65.78-1.65 1.58V12h2.8l-.45 2.88h-2.35v6.99A10 10 0 0022 12z"/></svg>
           </a>
-           <a href="https://www.instagram.com/ring_send_tech_centre/" aria-label="Instagram" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" viewBox="0 0 24 24">
-              <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2.75a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"/>
-            </svg>
+          <a href="https://www.instagram.com/ring_send_tech_centre/" aria-label="Instagram" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2.75a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"/></svg>
           </a>
           <a href="https://www.tiktok.com/@ringsend.tech.centre?_r=1&_t=ZS-95cz0WITldh" aria-label="TikTok" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" viewBox="0 0 24 24">
-              <path d="M12.75 2h2.5c.22 1.8 1.56 3.23 3.25 3.44v2.53a6.5 6.5 0 01-3.25-1.04v6.54a5.48 5.48 0 11-5.48-5.48c.3 0 .6.03.88.08v2.6a2.88 2.88 0 102.1 2.77V2z"/>
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.75 2h2.5c.22 1.8 1.56 3.23 3.25 3.44v2.53a6.5 6.5 0 01-3.25-1.04v6.54a5.48 5.48 0 11-5.48-5.48c.3 0 .6.03.88.08v2.6a2.88 2.88 0 102.1 2.77V2z"/></svg>
           </a>
-           <a href="https://wa.me/353852022335" aria-label="WhatsApp" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" viewBox="0 0 24 24">
-              <path d="M20.52 3.48A11.91 11.91 0 0012.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.6 5.94L0 24l6.34-1.66a11.8 11.8 0 005.71 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.43-8.42zM12.06 21.3a9.4 9.4 0 01-4.79-1.31l-.34-.2-3.76.99 1-3.66-.22-.38a9.38 9.38 0 01-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.66 2.75a9.36 9.36 0 012.76 6.66c0 5.2-4.23 9.44-9.43 9.44zm5.17-7.06c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.17-.43-2.23-1.37-.82-.73-1.38-1.63-1.54-1.9-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.48.14-.16.18-.28.28-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.28-.96.94-.96 2.29 0 1.35.98 2.66 1.12 2.84.14.18 1.94 2.96 4.7 4.15.66.28 1.18.45 1.58.58.66.21 1.26.18 1.73.11.53-.08 1.65-.67 1.88-1.32.23-.66.23-1.22.16-1.32-.07-.09-.25-.14-.53-.28z"/>
-            </svg>
+          <a href="https://wa.me/353852022335" aria-label="WhatsApp" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.91 11.91 0 0012.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.6 5.94L0 24l6.34-1.66a11.8 11.8 0 005.71 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.43-8.42zM12.06 21.3a9.4 9.4 0 01-4.79-1.31l-.34-.2-3.76.99 1-3.66-.22-.38a9.38 9.38 0 01-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.66 2.75a9.36 9.36 0 012.76 6.66c0 5.2-4.23 9.44-9.43 9.44zm5.17-7.06c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.17-.43-2.23-1.37-.82-.73-1.38-1.63-1.54-1.9-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.48.14-.16.18-.28.28-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.28-.96.94-.96 2.29 0 1.35.98 2.66 1.12 2.84.14.18 1.94 2.96 4.7 4.15.66.28 1.18.45 1.58.58.66.21 1.26.18 1.73.11.53-.08 1.65-.67 1.88-1.32.23-.66.23-1.22.16-1.32-.07-.09-.25-.14-.53-.28z"/></svg>
           </a>
         </div>
       </div>
@@ -749,7 +529,7 @@
       </div>
     </div>
     <div class="footer-bottom container">
-      <p>© 2025 Ringsend Tech Centre. All rights reserved. | 3 Ringsend Road, Dublin 4</p>
+      <p>© 2025 Ringsend Tech Centre. All rights reserved. | 9-11 Bridge Street, Ringsend, Dublin 4</p>
       <p>Privacy Policy · Terms of Service</p>
     </div>
   </footer>
