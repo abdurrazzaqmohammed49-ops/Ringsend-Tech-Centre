@@ -115,19 +115,35 @@ input, textarea, select { font-family: var(--font-body); }
   justify-content: space-between;
   gap: 24px;
 }
-.logo {
-  font-family: var(--font-head);
-  font-size: 24px;
-  font-weight: 900;
-  letter-spacing: -0.5px;
-  line-height: 1;
+.logo-img-wrap {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
+  text-decoration: none;
 }
-.logo-fix  { color: var(--white); }
-.logo-cell { color: var(--blue-light); }
-.logo-dot  { color: var(--blue); font-size: 14px; margin-left: 2px; }
+.nav-logo-img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 8px;
+  /* White background so the black parts of the logo are visible on light navbar */
+  background: #fff;
+  padding: 3px;
+  flex-shrink: 0;
+}
+.logo-name {
+  font-family: var(--font-head);
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: -0.3px;
+  line-height: 1.1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.logo-fix  { color: var(--white); font-size: 20px; }
+.logo-cell { color: var(--blue);  font-size: 13px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; }
+.logo-dot  { display: none; } /* no longer needed */
 
 .nav-links {
   display: flex;
@@ -907,32 +923,12 @@ input, textarea, select { font-family: var(--font-body); }
 }
 
 /* Submit button spinner state */
-.form-submit {
-  width: 100%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-
-  font-size: 15px;
-  font-weight: 600;
-
-  padding: 13px 26px;
-  border-radius: var(--radius-sm);
-
-  background: var(--blue);
-  color: #fff;
-  border: none;
-
-  box-shadow: 0 4px 20px var(--blue-glow);
-  transition: all 0.2s ease;
-}
-
-/* KEEP IT BLUE ON HOVER */
-.form-submit:hover {
-  background: var(--blue);
-  color: #fff;
-  transform: translateY(-2px);
+.form-submit { position: relative; }
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 36px;
+  box-shadow: 0 4px 24px rgba(29,78,216,.06);
 }
 .contact-form h3 {
   font-family: var(--font-head);
@@ -992,6 +988,7 @@ input, textarea, select { font-family: var(--font-body); }
   padding-bottom: 52px;
 }
 .footer-brand p { color: var(--muted); font-size: 14px; margin-top: 12px; line-height: 1.7; max-width: 240px; }
+.footer-brand .nav-logo-img { width: 52px; height: 52px; }
 .footer-socials { display: flex; gap: 10px; margin-top: 18px; }
 .footer-socials a {
   width: 36px;
